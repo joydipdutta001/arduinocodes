@@ -1,11 +1,13 @@
 #include <ESP8266WiFi.h>
 #include "FirebaseESP8266.h"
 
+////////////////////////////////////////////ENTER DETAILS HERE//////////////////////////////////////
+#define WIFI_SSID "ssid"
+#define WIFI_PASSWORD "password"
+#define FIREBASE_HOST "firebaseURL.com"
+#define FIREBASE_AUTH "database secret key"
+////////////////////////////////////////////////////////////////////////////////////////////////////
 
-#define WIFI_SSID "joydip"
-#define WIFI_PASSWORD "duta$130456"
-#define FIREBASE_HOST "ledblinking-50dc6.firebaseio.com"
-#define FIREBASE_AUTH "JxPOQLVklujpjZYVwR9c4CzJ4pBCcD6zX2NZzgzz"
 
 FirebaseData firebaseData;
 

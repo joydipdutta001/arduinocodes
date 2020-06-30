@@ -7,10 +7,10 @@ int p2 = 4;
 int p3 = 0;
 int p4 = 2;
 
-#define WIFI_SSID "joydip"
-#define WIFI_PASSWORD "duta$130456"
-#define FIREBASE_HOST "ledblinking-50dc6.firebaseio.com"
-#define FIREBASE_AUTH "JxPOQLVklujpjZYVwR9c4CzJ4pBCcD6zX2NZzgzz"
+#define WIFI_SSID "*********" //enter your wifi ssid
+#define WIFI_PASSWORD "*****" // enter your wifi password
+#define FIREBASE_HOST "**************"//enter your firebaseUrl of the individual project
+#define FIREBASE_AUTH "**************" // enter your database secret key
 
 FirebaseData firebaseData;
 
@@ -110,6 +110,5 @@ void loop() {
     }
 
     delay(200);
-  // put your main code here, to run repeatedly:
 
 }

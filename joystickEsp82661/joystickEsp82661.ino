@@ -4,11 +4,16 @@
 #define Joystick_y 15
 #define onlyAnalogPin A0
 
+
+#define WIFI_SSID "*********" //enter your wifi ssid
+#define WIFI_PASSWORD "*****" // enter your wifi password
+
+
 void setup() {
 // put your setup code here, to run once:
 
 Serial.begin(115200); 
-    WiFi.begin("joydip", "duta$130456");
+    WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
   Serial.print("Connecting to Wi-Fi");
 
    while (WiFi.status() != WL_CONNECTED)
@@ -37,7 +42,6 @@ Serial.print(" Y = ");
 Serial.print(y, DEC);
 Serial.println();
 delay(20);
-// put your main code here, to run repeatedly:
 
 }
 

@@ -1,7 +1,7 @@
-int IR1 = 13;     /* digital pin input for ir sensor  */
+int IR1 = 13;     
 int IR2 = 15;
-int IR1_out = HIGH; /* Avoiding initial false detections.    */
-int IR2_out = HIGH; /* Avoiding initial false detections.    */
+int IR1_out = HIGH; 
+int IR2_out = HIGH;
 int counter = 0;
 int i = 0;
  

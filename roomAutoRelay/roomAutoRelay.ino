@@ -5,10 +5,10 @@
 int pins[]= { 5,4,0,2 };
 int countPins = 4;
 
-#define WIFI_SSID "joydip"
-#define WIFI_PASSWORD "duta$130456"
-#define FIREBASE_HOST "ledblinking-50dc6.firebaseio.com"
-#define FIREBASE_AUTH "JxPOQLVklujpjZYVwR9c4CzJ4pBCcD6zX2NZzgzz"
+#define WIFI_SSID ""/////////ENTER WIFI SSID,PASSWORD, FIREBASE  DATABASE LINK, DATABASE SECRET KEY////////////
+#define WIFI_PASSWORD ""
+#define FIREBASE_HOST ""
+#define FIREBASE_AUTH ""
 
 FirebaseData firebaseData;
 
@@ -32,10 +32,7 @@ void setup() {
 
   //Set database read timeout to 1 minute (max 15 minutes)
   Firebase.setReadTimeout(firebaseData, 1000 * 60);
-//  pinMode(p1, OUTPUT);
-//  pinMode(p2, OUTPUT);
-//  pinMode(p3, OUTPUT);
-//  pinMode(p4, OUTPUT);
+
 
 for(int i = 0; i< countPins; i++){
 
@@ -75,50 +72,7 @@ void loop() {
       }
       
     }
-//    if (Firebase.getInt(firebaseData,"/light2/value"))
-//    {
-//      int val2 = (firebaseData.intData());
-//      if (val2 == 1)
-//      {
-//        digitalWrite(p2,LOW);
-//        Serial.println("Led is On");
-//      }
-//      else{
-//        digitalWrite(p2, HIGH);
-//        Serial.println("Led is Off");
-//      }
-//  
-//      
-//    }
-//    if (Firebase.getInt(firebaseData,"/light3/value"))
-//    {
-//      int val3 = (firebaseData.intData());
-//      if (val3 == 1)
-//      {
-//        digitalWrite(p3,LOW);
-//        Serial.println("Led is On");
-//      }
-//      else{
-//        digitalWrite(p3, HIGH);
-//        Serial.println("Led is Off");
-//      }
-//  
-//      
-//    }if (Firebase.getInt(firebaseData,"/light4/value"))
-//    {
-//      int val4 = (firebaseData.intData());
-//      if (val4 == 1)
-//      {
-//        digitalWrite(p4,LOW);
-//        Serial.println("Led is On");
-//      }
-//      else{
-//        digitalWrite(p4, HIGH);
-//        Serial.println("Led is Off");
-//      }
-//  
-//      
-//    }
+
 
     delay(200);
   // put your main code here, to run repeatedly:

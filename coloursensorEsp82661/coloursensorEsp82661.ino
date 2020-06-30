@@ -10,7 +10,7 @@ const int s0 = 2; //D4
  void setup() 
   {    
 Serial.begin(115200); 
-    WiFi.begin("joydip", "duta$130456");
+    WiFi.begin("ssid", "password");//enter your router ssid and password(you can do the same with your mobile hotspot)
   Serial.print("Connecting to Wi-Fi");
 
    while (WiFi.status() != WL_CONNECTED)

@@ -5,7 +5,7 @@ int smp = A0;
 void setup() {
 
 Serial.begin(115200); 
-    WiFi.begin("joydip", "duta$130456");
+    WiFi.begin("SSID", "PASSWORD");
   Serial.print("Connecting to Wi-Fi");
 
    while (WiFi.status() != WL_CONNECTED)
@@ -31,6 +31,5 @@ void loop() {
   Serial.println(value);
 
   delay(1000);
-  // put your main code here, to run repeatedly:
 
 }

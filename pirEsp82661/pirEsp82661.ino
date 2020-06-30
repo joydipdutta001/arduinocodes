@@ -1,9 +1,14 @@
 #include<ESP8266WiFi.h>
 int sensor = 13;  // Digital pin D7
+
+
+#define WIFI_SSID "*********" //enter your wifi ssid
+#define WIFI_PASSWORD "*****" // enter your wifi password
+
 void setup() {
   
 Serial.begin(115200); 
-    WiFi.begin("joydip", "duta$130456");
+    WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
   Serial.print("Connecting to Wi-Fi");
 
    while (WiFi.status() != WL_CONNECTED)

@@ -1,26 +1,14 @@
-
-/*
- * Created by K. Suwatchai (Mobizt)
- * 
- * Email: k_suwatchai@hotmail.com
- * 
- * Github: https://github.com/mobizt
- * 
- * Copyright (c) 2019 mobizt
- *
-*/
-
-//This example shows how to set and push timestamp (server time) which is the server variable that suopported by Firebase
-
-//FirebaseESP8266.h must be included before ESP8266WiFi.h
 #include "FirebaseESP8266.h"
 #include <ESP8266WiFi.h>
 #include "time.h";
+////////////////////////////////////////////////////////////ENTER DETAILS////////////////////////////////////////
+#define FIREBASE_HOST "********************"
+#define FIREBASE_AUTH "*********************"
+#define WIFI_SSID "SSID"
+#define WIFI_PASSWORD "PASSWORD"
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-#define FIREBASE_HOST "esp-8266-time.firebaseio.com"
-#define FIREBASE_AUTH "b9CoQZCjWJnMgdpk1ixMqbY9N9thSLqN46rIZ2Z7"
-#define WIFI_SSID "joydip"
-#define WIFI_PASSWORD "duta$130456"
+
 
 //Define Firebase Data object
 FirebaseData firebaseData;
@@ -51,17 +39,6 @@ void setup()
 
   Firebase.begin(FIREBASE_HOST, FIREBASE_AUTH);
   Firebase.reconnectWiFi(true);
-
-  /*
-  This option allows get and delete functions (PUT and DELETE HTTP requests) works for device connected behind the
-  Firewall that allows only GET and POST requests.
-  
-  Firebase.enableClassicRequest(firebaseData, true);
-  */
-
-
-
-
 }
 
 
